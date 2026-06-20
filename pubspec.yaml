@@ -1,0 +1,40 @@
+name: ebro_browser
+description: A privacy-first, AI-powered mobile browser.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Real browser engine (Chromium on Android, WebKit on iOS)
+  webview_flutter: ^4.7.0
+  webview_flutter_android: ^3.16.0
+
+  # Backend
+  supabase_flutter: ^2.5.6
+
+  # Networking for Gemini API calls
+  http: ^1.2.1
+
+  # Local storage for settings / API keys
+  shared_preferences: ^2.2.3
+
+  # State management
+  provider: ^6.1.2
+
+  # Nice UI extras
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.10+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
