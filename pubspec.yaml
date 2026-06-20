@@ -36,5 +36,14 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^4.0.0
 
+# This forces a newer version of app_links (a transitive dependency
+# pulled in by supabase_flutter) that uses the modern Gradle plugin
+# syntax. The older version that supabase_flutter would normally pull
+# in uses a deprecated Gradle style that fails to build with current
+# Android Gradle Plugin versions — this override fixes that without
+# needing to change supabase_flutter itself.
+dependency_overrides:
+  app_links: ^6.3.2
+
 flutter:
   uses-material-design: true
