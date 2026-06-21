@@ -37,6 +37,15 @@ android {
             // Replace with a real signing config before publishing to
             // the Play Store.
             signingConfig signingConfigs.debug
+
+            // R8 (the code shrinker/minifier) doesn't yet support the
+            // Kotlin 2.2.0 metadata format used by some dependencies.
+            // Disabling minification avoids that crash. This makes the
+            // APK a bit larger but doesn't affect functionality at all —
+            // safe to leave off until R8 catches up, then can be
+            // re-enabled by flipping this back to true.
+            minifyEnabled false
+            shrinkResources false
         }
     }
 }
