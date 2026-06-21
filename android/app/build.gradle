@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace 'com.ebro.app'
-    compileSdk 34
+    compileSdk flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -24,8 +24,8 @@ android {
 
     defaultConfig {
         applicationId "com.ebro.app"
-        minSdkVersion 21
-        targetSdkVersion 34
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion flutter.targetSdkVersion
         versionCode flutter.versionCode.toInteger()
         versionName flutter.versionName
     }

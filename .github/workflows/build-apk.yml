@@ -1,8 +1,5 @@
 name: Build Ebro APK
 
-# This runs automatically on GitHub's own computers — you don't need
-# a computer of your own. It triggers every time you push code to the
-# main branch, and also lets you trigger it manually from the Actions tab.
 on:
   push:
     branches: [ main ]
@@ -24,11 +21,14 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.24.0'
+          flutter-version: '3.27.0'
           channel: 'stable'
 
       - name: Install dependencies
         run: flutter pub get
+
+      - name: Upgrade app_links to a Gradle-8-compatible version
+        run: flutter pub upgrade app_links
 
       - name: Build release APK
         run: flutter build apk --release
