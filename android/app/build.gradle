@@ -24,7 +24,7 @@ android {
 
     defaultConfig {
         applicationId "com.ebro.app"
-        minSdkVersion flutter.minSdkVersion
+        minSdkVersion 23
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutter.versionCode.toInteger()
         versionName flutter.versionName
