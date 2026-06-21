@@ -8,8 +8,8 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 ///   2. Run the SQL in supabase_schema.sql (same one used for the web version)
 ///   3. Paste your Project URL and anon key below.
 class SupabaseConfig {
-  static const String url = 'YOUR_SUPABASE_URL';
-  static const String anonKey = 'YOUR_SUPABASE_ANON_KEY';
+  static const String url = 'https://jjtrddbxjalpzwgvrqxy.supabase.co';
+  static const String anonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpqdHJkZGJ4amFscHp3Z3ZycXh5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE0NDgxNTYsImV4cCI6MjA5NzAyNDE1Nn0.Cq6uGXrIDMu-MYgHmJ0UBrv-6BYoPObvMdDQhvumaOg';
 }
 
 class SupabaseService {
